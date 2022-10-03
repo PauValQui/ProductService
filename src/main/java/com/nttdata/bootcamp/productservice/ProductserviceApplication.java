@@ -2,9 +2,9 @@ package com.nttdata.bootcamp.productservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-import com.nttdata.bootcamp.dto.ProductController;
-
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ProductserviceApplication {
 
