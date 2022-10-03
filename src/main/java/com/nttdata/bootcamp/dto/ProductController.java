@@ -19,12 +19,18 @@ public class ProductController {
 	}
 	
 	@GetMapping("{id}")
-	public void getProduct(@PathVariable Integer id) {
-		productService.getProduct(id);
+	public Product getProduct(@PathVariable Integer id) {
+		Product product = new Product();
+		
+		product = productService.getProduct(id);
+		return product;
 	}
 	
 	@PostMapping("{id}")
-	public void postProduct(@PathVariable Integer id) {
-		productService.postProduct(id);
+	public Product postProduct(@PathVariable Integer id) {
+		Product product = new Product();
+		
+		product = productService.postProduct(id);
+		return product;
 	}
 }

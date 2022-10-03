@@ -3,6 +3,7 @@ package com.nttdata.bootcamp.dto;
 public class Product {
 	private int productId;
 	private String channel;
+	private int port;
 	
 	public int getProductId() {
 		return productId;
@@ -15,7 +16,15 @@ public class Product {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+		
 	}
+	public int getPort() {
+		return port;
+	}
+	public void setPort(int port) {
+		this.port = port;
+	}
+	
 	
 	
 }
